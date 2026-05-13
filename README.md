@@ -14,4 +14,4 @@ Bu proje, evcil hayvanların sahiplik durumlarını ve veteriner randevularını
 ## Grup Üyeleri
 - Sema Nur YAĞÇI
 - Osman Melih KARADAĞ
-- Hayrunisa ÖZTÜRL
+- Hayrunisa ÖZTÜRK

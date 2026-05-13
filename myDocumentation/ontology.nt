@@ -1,0 +1,92 @@
+<http://www.semanticweb.org/pet-management-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/pet-management-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Pet management ontology v2 with extended hierarchy and property restrictions." .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pet-management-ontology#hasOwner
+<http://www.semanticweb.org/pet-management-ontology#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pet-management-ontology#hasOwner> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/pet-management-ontology#ownsPet> .
+<http://www.semanticweb.org/pet-management-ontology#hasOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pet-management-ontology#Pet> .
+<http://www.semanticweb.org/pet-management-ontology#hasOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pet-management-ontology#Owner> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#isTreatedBy
+<http://www.semanticweb.org/pet-management-ontology#isTreatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/pet-management-ontology#isTreatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/pet-management-ontology#treatsPet> .
+<http://www.semanticweb.org/pet-management-ontology#isTreatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pet-management-ontology#Pet> .
+<http://www.semanticweb.org/pet-management-ontology#isTreatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/pet-management-ontology#Veterinarian> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#ownsPet
+<http://www.semanticweb.org/pet-management-ontology#ownsPet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#treatsPet
+<http://www.semanticweb.org/pet-management-ontology#treatsPet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pet-management-ontology#hasAge
+<http://www.semanticweb.org/pet-management-ontology#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/pet-management-ontology#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/pet-management-ontology#hasAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/pet-management-ontology#Pet> .
+<http://www.semanticweb.org/pet-management-ontology#hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pet-management-ontology#Bird
+<http://www.semanticweb.org/pet-management-ontology#Bird> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pet-management-ontology#Bird> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pet-management-ontology#Pet> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#Cat
+<http://www.semanticweb.org/pet-management-ontology#Cat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pet-management-ontology#Cat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pet-management-ontology#Pet> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#Dog
+<http://www.semanticweb.org/pet-management-ontology#Dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/pet-management-ontology#Dog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/pet-management-ontology#Pet> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#Owner
+<http://www.semanticweb.org/pet-management-ontology#Owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#Pet
+<http://www.semanticweb.org/pet-management-ontology#Pet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#Treatment
+<http://www.semanticweb.org/pet-management-ontology#Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/pet-management-ontology#Veterinarian
+<http://www.semanticweb.org/pet-management-ontology#Veterinarian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/pet-management-ontology#Susu
+<http://www.semanticweb.org/pet-management-ontology#Susu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/pet-management-ontology#Susu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/pet-management-ontology#Cat> .
+<http://www.semanticweb.org/pet-management-ontology#Susu> <http://www.semanticweb.org/pet-management-ontology#hasAge> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

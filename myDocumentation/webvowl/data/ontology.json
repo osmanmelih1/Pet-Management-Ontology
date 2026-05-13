@@ -1,0 +1,215 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/pet-management-ontology" ],
+    "iri" : "http://www.semanticweb.org/pet-management-ontology",
+    "comments" : {
+      "undefined" : "Pet management ontology v2 with extended hierarchy and property restrictions."
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#Owner",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Owner"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#Dog",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dog"
+    },
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#Pet",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pet"
+    },
+    "subClasses" : [ "4", "5", "6" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#Bird",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bird"
+    },
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#Veterinarian",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Veterinarian"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#Cat",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/pet-management-ontology#Susu",
+      "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+      "labels" : {
+        "IRI-based" : "Susu"
+      }
+    } ],
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#Treatment",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Treatment"
+    },
+    "id" : "16"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#hasAge",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasAge"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "0"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#ownsPet",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "ownsPet"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#isTreatedBy",
+    "inverse" : "14",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "isTreatedBy"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#hasOwner",
+    "inverse" : "9",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasOwner"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/pet-management-ontology#treatsPet",
+    "baseIri" : "http://www.semanticweb.org/pet-management-ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "treatsPet"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  } ]
+}

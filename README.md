@@ -11,20 +11,20 @@ Hayrunisa ÖZTÜRK
 # 🚀 Project Scope (Version 2.0)
 The ontology has been significantly expanded to include:
 
-Advanced Hierarchy: Added specific subclasses for the Pet class, including Cat, Dog, and Bird.
+#### Advanced Hierarchy: Added specific subclasses for the Pet class, including Cat, Dog, and Bird.
 
-Inverse Properties: Formally defined ownsPet as the inverse of hasOwner and treatsPet as the inverse of isTreatedBy.
+#### Inverse Properties: Formally defined ownsPet as the inverse of hasOwner and treatsPet as the inverse of isTreatedBy.
 
-Functional Restrictions: The hasAge property is now a Functional Property to ensure data integrity.
+#### Functional Restrictions: The hasAge property is now a Functional Property to ensure data integrity.
 
-Treatment Tracking: Integrated detailed relationships between pets, treatments, and veterinarians.
+#### Treatment Tracking: Integrated detailed relationships between pets, treatments, and veterinarians.
 
 # 🔍 Research & Methodology
-Development Methodology: Following the METHONTOLOGY framework.
+#### Development Methodology: Following the METHONTOLOGY framework.
 
-Research Integration: Exploration of Ontology Population using Large Language Models (LLMs) for automated data acquisition from clinical notes.
+#### Research Integration: Exploration of Ontology Population using Large Language Models (LLMs) for automated data acquisition from clinical notes.
 
-Predictive Modeling: Adaptation of GRU-RNN based behavioral prediction methods (inspired by personalized student ontologies) for pet health trend analysis.
+#### Predictive Modeling: Adaptation of GRU-RNN based behavioral prediction methods (inspired by personalized student ontologies) for pet health trend analysis.
 
 # 🛠 Technologies Used
 OWL 2 DL (Ontology Language)

@@ -1,0 +1,41 @@
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix pet:  <http://www.semanticweb.org/pet-management-ontology#> .
+
+pet:PetStructuralShape
+    a sh:NodeShape ;
+    sh:targetClass pet:Pet, pet:Cat, pet:Dog, pet:Bird, pet:Rabbit ;
+
+    sh:property [
+        sh:path pet:hasName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Validation Error: Every registered Pet must possess exactly one alphanumeric string name." ;
+    ] ;
+
+    sh:property [
+        sh:path pet:hasAge ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:minInclusive 0 ;
+        sh:message "Validation Error: Pet age must be a single integer greater than or equal to zero." ;
+    ] ;
+
+    sh:property [
+        sh:path pet:hasOwner ;
+        sh:maxCount 1 ;
+        sh:message "Integrity Violation: A pet asset cannot map to multiple distinct owner nodes simultaneously." ;
+    ] .
+
+pet:TreatmentComplianceShape
+    a sh:NodeShape ;
+    sh:targetClass pet:Treatment, pet:Vaccination, pet:Surgery, pet:Emergency, pet:Checkup ;
+
+    sh:property [
+        sh:path pet:isAppliedTo ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Validation Error: A medical treatment record must be explicitly linked to exactly one Pet asset." ;
+    ] .

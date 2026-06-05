@@ -75,12 +75,133 @@
     
 
 
-    <!-- http://www.semanticweb.org/pet-management-ontology#hasAge -->
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasAddress -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasAge">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/pet-management-ontology#Pet"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasBreed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasBreed">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasEmail">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasExperience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasExperience">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasGender">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasNotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasNotes">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasOwnerId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasOwnerId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasPetID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasPetID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasPhone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasPhone">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasSpecialization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasSpecialization">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasVetID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasVetID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#hasWeight">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#treatmentCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#treatmentCost">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#treatmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#treatmentDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#treatmentType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#treatmentType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#worksAtClinic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pet-management-ontology#worksAtClinic">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -112,6 +233,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/pet-management-ontology#Checkup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Checkup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Treatment"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pet-management-ontology#Dog -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Dog">
@@ -120,9 +249,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/pet-management-ontology#Emergency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Emergency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#GeneralPractitioner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#GeneralPractitioner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Veterinarian"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pet-management-ontology#Owner -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Owner"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Owner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Person"/>
     
 
 
@@ -132,15 +285,57 @@
     
 
 
+    <!-- http://www.semanticweb.org/pet-management-ontology#Reptile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Reptile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#Rodent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Rodent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Pet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#Surgeon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Surgeon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Veterinarian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pet-management-ontology#Surgery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Surgery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Treatment"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pet-management-ontology#Treatment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Treatment"/>
     
 
 
+    <!-- http://www.semanticweb.org/pet-management-ontology#Vaccination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Vaccination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Treatment"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pet-management-ontology#Veterinarian -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Veterinarian"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pet-management-ontology#Veterinarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pet-management-ontology#Person"/>
+    </owl:Class>
     
 
 
@@ -201,7 +396,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pet-management-ontology#Susu">
         <rdf:type rdf:resource="http://www.semanticweb.org/pet-management-ontology#Cat"/>
         <hasOwner rdf:resource="http://www.semanticweb.org/pet-management-ontology#Ahmet"/>
-        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasAge>
     </owl:NamedIndividual>
     
 

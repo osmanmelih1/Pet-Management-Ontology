@@ -8,8 +8,8 @@ This repository contains the complete semantic web and knowledge engineering sol
 
 ## 👥 Group Members
 * **Hayrunisa ÖZTÜRK**
-* **Sema Nur YAĞÇI**
 * **Osman Melih KARADAĞ**
+* **Sema Nur YAĞÇI**
 
 ---
 
